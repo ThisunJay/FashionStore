@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.rawBtn = new System.Windows.Forms.Button();
+            this.finBtn = new System.Windows.Forms.Button();
             this.addBtn = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -46,23 +46,25 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // rawBtn
             // 
-            this.button1.Location = new System.Drawing.Point(12, 208);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(206, 39);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Raw";
-            this.button1.UseVisualStyleBackColor = true;
+            this.rawBtn.Location = new System.Drawing.Point(12, 208);
+            this.rawBtn.Name = "rawBtn";
+            this.rawBtn.Size = new System.Drawing.Size(206, 39);
+            this.rawBtn.TabIndex = 1;
+            this.rawBtn.Text = "Raw";
+            this.rawBtn.UseVisualStyleBackColor = true;
+            this.rawBtn.Click += new System.EventHandler(this.rawBtn_Click);
             // 
-            // button2
+            // finBtn
             // 
-            this.button2.Location = new System.Drawing.Point(12, 273);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(206, 39);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Finish";
-            this.button2.UseVisualStyleBackColor = true;
+            this.finBtn.Location = new System.Drawing.Point(12, 273);
+            this.finBtn.Name = "finBtn";
+            this.finBtn.Size = new System.Drawing.Size(206, 39);
+            this.finBtn.TabIndex = 2;
+            this.finBtn.Text = "Finish";
+            this.finBtn.UseVisualStyleBackColor = true;
+            this.finBtn.Click += new System.EventHandler(this.finBtn_Click);
             // 
             // addBtn
             // 
@@ -93,8 +95,8 @@
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.addBtn);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.finBtn);
+            this.Controls.Add(this.rawBtn);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Warehouse";
             this.Text = "Warehouse";
@@ -107,8 +109,8 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button rawBtn;
+        private System.Windows.Forms.Button finBtn;
         private System.Windows.Forms.Button addBtn;
         private System.Windows.Forms.DataGridView dataGridView1;
     }

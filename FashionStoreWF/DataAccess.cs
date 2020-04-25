@@ -76,6 +76,16 @@ namespace FashionStoreWF
             }
         }
 
+        public void AddItem(Item item)
+        {
+            using (IDbConnection con = new System.Data.SqlClient.SqlConnection(Helper.ConVal("fashionDB")))
+            {
+                List<Item> Items = new List<Item>();
+                Items.Add(item);
+                con.Execute("dbo.Items_Insert @itemCode, @itemName, @itemType, @itemDes", Items);
+            }
+        }
+
         public List<Customer> GetAllCustomers()
         {
             using (IDbConnection con = new System.Data.SqlClient.SqlConnection(Helper.ConVal("fashionDB")))
@@ -100,6 +110,17 @@ namespace FashionStoreWF
             {
                 var Employees = con.Query<Employee>("select * from Employees").ToList();
                 return Employees;
+            }
+        }
+
+        //ItemType.Items.Add("Raw Materials");
+        //ItemType.Items.Add("Finished Goods");
+        public List<Item> GetItems(string type)
+        {
+            using (IDbConnection con = new System.Data.SqlClient.SqlConnection(Helper.ConVal("fashionDB")))
+            {
+                var Items = con.Query<Item>($"select * from Items where itemType = '{ type }'").ToList();
+                return Items;
             }
         }
     }

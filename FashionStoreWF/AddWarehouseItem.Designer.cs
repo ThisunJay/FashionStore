@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ItemCode = new System.Windows.Forms.TextBox();
@@ -40,7 +41,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -94,6 +97,7 @@
             this.ItemType.Name = "ItemType";
             this.ItemType.Size = new System.Drawing.Size(281, 24);
             this.ItemType.TabIndex = 5;
+            this.ItemType.SelectedIndexChanged += new System.EventHandler(this.ItemType_SelectedIndexChanged);
             // 
             // addBtn
             // 
@@ -103,6 +107,7 @@
             this.addBtn.TabIndex = 6;
             this.addBtn.Text = "Add Item";
             this.addBtn.UseVisualStyleBackColor = true;
+            this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
             // 
             // clrBtn
             // 
@@ -112,6 +117,7 @@
             this.clrBtn.TabIndex = 7;
             this.clrBtn.Text = "Clear";
             this.clrBtn.UseVisualStyleBackColor = true;
+            this.clrBtn.Click += new System.EventHandler(this.clrBtn_Click);
             // 
             // label2
             // 
@@ -153,6 +159,10 @@
             this.label5.TabIndex = 11;
             this.label5.Text = "Item Description";
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // AddWarehouseItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -175,6 +185,7 @@
             this.Name = "AddWarehouseItem";
             this.Text = "AddWarehouseItem";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,5 +205,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

@@ -44,3 +44,17 @@ Begin
 END
 
 select * from Employees
+
+CREATE TABLE Items (
+	i_id int identity primary key,
+	itemCode varchar(50) not null,
+	itemName varchar(50) not null,
+	itemType varchar(50) not null,
+	itemDes varchar(100) not null
+);
+
+CREATE PROCEDURE Items_Insert @itemCode varchar(50), @itemName varchar(50), @itemType varchar(50), @itemDes varchar(50)
+AS
+Begin
+	INSERT INTO Items(itemCode, itemName, itemType, itemDes) VALUES (@itemCode, @itemName, @itemType, @itemDes)
+END
