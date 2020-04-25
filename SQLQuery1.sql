@@ -1,0 +1,44 @@
+﻿CREATE TABLE Customers (
+	c_id int identity primary key,
+	FirstName varchar(50) not null,
+	LastName varchar(50) not null,
+	email varchar(100) not null,
+	c_address varchar(100) not null
+);
+
+CREATE TABLE Suppliers (
+	s_id int identity primary key,
+	s_name varchar(100) not null,
+	email varchar(100) not null,
+	s_address varchar(100) not null
+);
+
+drop table Suppliers
+
+CREATE PROCEDURE Customers_Insert @FirstName varchar(50), @LastName varchar(50), @email varchar(100), @c_address varchar(100)
+AS
+Begin
+	INSERT INTO Customers (FirstName, LastName, email, c_address) VALUES (@FirstName, @LastName, @email, @c_address)
+END
+--------------------------------------------------------------------
+
+CREATE PROCEDURE Suppliers_Insert @s_name varchar(100), @email varchar(100), @s_address varchar(100)
+AS
+Begin
+	INSERT INTO Suppliers (s_name, email, s_address) VALUES (@s_name, @email, @s_address)
+END
+
+CREATE TABLE Employees (
+	e_id int identity primary key,
+	e_name varchar(100) not null,
+	nic varchar(50) not null,
+	e_address varchar(100) not null,
+	e_contactNumber char(10) not null,
+	e_jobrole varchar(50) not null
+);
+
+CREATE PROCEDURE Employees_Insert @e_name varchar(100), @nic varchar(50), @e_address varchar(100), @e_contactNumber char(10), @e_jobrole varchar(50)
+AS
+Begin
+	INSERT INTO EmpEmployees(e_name, nic, e_address, e_contactNumber, e_jobrole) VALUES (@e_name, @nic, @e_address, @e_contactNumber, @e_jobrole)
+END
