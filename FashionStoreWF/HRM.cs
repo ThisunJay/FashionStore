@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FashionStoreWF.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,6 +22,15 @@ namespace FashionStoreWF
         {
             EmployeeRegistration employeeRegistration = new EmployeeRegistration();
             employeeRegistration.ShowDialog();
+        }
+
+        private void empBtn_Click(object sender, EventArgs e)
+        {
+            DataAccess db = new DataAccess();
+            var list = db.GetAllEmployees();
+            var bindingList = new BindingList<Employee>(list);
+            var source = new BindingSource(bindingList, null);
+            dataGridView1.DataSource = source;
         }
     }
 }

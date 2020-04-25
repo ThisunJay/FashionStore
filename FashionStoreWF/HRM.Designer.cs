@@ -29,13 +29,15 @@
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.empBtn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.adEmpBtn = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -47,14 +49,15 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // empBtn
             // 
-            this.button1.Location = new System.Drawing.Point(12, 182);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(177, 42);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Employee Details";
-            this.button1.UseVisualStyleBackColor = true;
+            this.empBtn.Location = new System.Drawing.Point(12, 182);
+            this.empBtn.Name = "empBtn";
+            this.empBtn.Size = new System.Drawing.Size(177, 42);
+            this.empBtn.TabIndex = 1;
+            this.empBtn.Text = "Employee Details";
+            this.empBtn.UseVisualStyleBackColor = true;
+            this.empBtn.Click += new System.EventHandler(this.empBtn_Click);
             // 
             // button2
             // 
@@ -102,6 +105,16 @@
             this.button6.Text = "Add Payment";
             this.button6.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(207, 105);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(817, 404);
+            this.dataGridView1.TabIndex = 7;
+            // 
             // HRM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -109,16 +122,18 @@
             this.BackgroundImage = global::FashionStoreWF.Properties.Resources.backgroundSingleColor;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.adEmpBtn);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.empBtn);
             this.Controls.Add(this.pictureBox1);
             this.Name = "HRM";
             this.Text = "HRM";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -126,11 +141,12 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button empBtn;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button adEmpBtn;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

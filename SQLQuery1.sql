@@ -40,5 +40,7 @@ CREATE TABLE Employees (
 CREATE PROCEDURE Employees_Insert @e_name varchar(100), @nic varchar(50), @e_address varchar(100), @e_contactNumber char(10), @e_jobrole varchar(50)
 AS
 Begin
-	INSERT INTO EmpEmployees(e_name, nic, e_address, e_contactNumber, e_jobrole) VALUES (@e_name, @nic, @e_address, @e_contactNumber, @e_jobrole)
+	INSERT INTO Employees(e_name, nic, e_address, e_contactNumber, e_jobrole) VALUES (@e_name, @nic, @e_address, @e_contactNumber, @e_jobrole)
 END
+
+select * from Employees

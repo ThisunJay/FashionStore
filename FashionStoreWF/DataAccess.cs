@@ -72,7 +72,7 @@ namespace FashionStoreWF
             {
                 List<Employee> employees = new List<Employee>();
                 employees.Add(employee);
-                con.Execute("dbo.Suppliers_Insert @s_name, @email, @phone, @s_address", employees);
+                con.Execute("dbo.Employees_Insert @e_name, @nic, @e_address, @e_contactNumber, @e_jobrole", employees);
             }
         }
 
@@ -94,5 +94,13 @@ namespace FashionStoreWF
             }
         }
 
+        public List<Employee> GetAllEmployees()
+        {
+            using (IDbConnection con = new System.Data.SqlClient.SqlConnection(Helper.ConVal("fashionDB")))
+            {
+                var Employees = con.Query<Employee>("select * from Employees").ToList();
+                return Employees;
+            }
+        }
     }
 }
