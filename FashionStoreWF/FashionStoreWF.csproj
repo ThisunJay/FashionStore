@@ -109,6 +109,7 @@
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Item.cs" />
+    <Compile Include="Models\Pattern.cs" />
     <Compile Include="Models\Supplier.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="NewPattern.cs">
@@ -118,6 +119,12 @@
       <DependentUpon>NewPattern.cs</DependentUpon>
     </Compile>
     <Compile Include="PasswordHasher.cs" />
+    <Compile Include="Patterns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patterns.Designer.cs">
+      <DependentUpon>Patterns.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegisterUser.cs">
@@ -161,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NewPattern.resx">
       <DependentUpon>NewPattern.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patterns.resx">
+      <DependentUpon>Patterns.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FashionStoreWF.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -36,14 +37,54 @@ namespace FashionStoreWF
         {
             //File.Copy(fileName, Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory())) + @"image", Path.GetFileName(fileName)), true);
             File.Copy(fileName, Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory())) + @"\\images", Path.GetFileName(fileName)), true);
+
+            if(ValidateForm())
+            {
+                Pattern pattern = new Pattern();
+                DataAccess db = new DataAccess();
+
+                pattern.p_date = PatternDate.Value.ToString();
+                pattern.p_boardNumber = BoardNum.Text.Trim();
+                pattern.p_image = Path.GetFileName(fileName);
+
+                db.AddPattern(pattern);
+                ClearForm();
+            }
         }
 
         //Full file path can get from here.. you just need to change the file name, can be done using simple string manipulation
         //Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory())) + @"\\images\\art1 lib.jpg")
 
+        private void ClearForm()
+        {
+            BoardNum.Text = "";
+            pictureBox2.Image = null;
+        }
+
+        public bool ValidateForm()
+        {
+            if (string.IsNullOrEmpty(BoardNum.Text.Trim()))
+            {
+                errorProvider1.SetError(BoardNum, "Required!");
+                return false;
+            }
+            else if (pictureBox2.Image == null)
+            {
+                errorProvider1.SetError(pictureBox2, "Required!");
+                return false;
+            }
+            return true;
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            ClearForm();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //label5.Text = Path.GetFileName(fileName);
+            label5.Text = PatternDate.Value.ToString();
         }
     }
 }

@@ -73,6 +73,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(216, 174);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox3
             // 
@@ -186,6 +187,7 @@
             this.button3.Size = new System.Drawing.Size(169, 113);
             this.button3.TabIndex = 11;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label3
             // 
@@ -198,6 +200,7 @@
             this.label3.Size = new System.Drawing.Size(188, 24);
             this.label3.TabIndex = 12;
             this.label3.Text = "Patterns and Fashion";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // button4
             // 

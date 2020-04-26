@@ -86,6 +86,16 @@ namespace FashionStoreWF
             }
         }
 
+        public void AddPattern(Pattern pattern)
+        {
+            using (IDbConnection con = new System.Data.SqlClient.SqlConnection(Helper.ConVal("fashionDB")))
+            {
+                List<Pattern> patterns = new List<Pattern>();
+                patterns.Add(pattern);
+                con.Execute("dbo.Patterns_Insert @p_boardNumber, @p_date, @p_image", patterns);
+            }
+        }
+
         public List<Customer> GetAllCustomers()
         {
             using (IDbConnection con = new System.Data.SqlClient.SqlConnection(Helper.ConVal("fashionDB")))

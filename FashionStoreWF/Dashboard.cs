@@ -38,6 +38,13 @@ namespace FashionStoreWF
             warehouse.ShowDialog();
         }
 
+        public void ShowPattern()
+        {
+            this.Hide();
+            Patterns patterns = new Patterns();
+            patterns.ShowDialog();
+        }
+
         private void button4_Click(object sender, EventArgs e)
         {
             ShowMarketing();
@@ -71,6 +78,21 @@ namespace FashionStoreWF
         private void label2_Click(object sender, EventArgs e)
         {
             ShowWarehouse();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ShowPattern();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            ShowPattern();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            ShowPattern();
         }
     }
 }
