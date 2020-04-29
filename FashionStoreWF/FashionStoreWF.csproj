@@ -108,6 +108,7 @@
     </Compile>
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\FinishGoods.cs" />
     <Compile Include="Models\Item.cs" />
     <Compile Include="Models\Pattern.cs" />
     <Compile Include="Models\Supplier.cs" />

@@ -83,3 +83,18 @@ Begin
 END
 
 select * from Patterns
+
+drop table FinishGoods
+
+CREATE TABLE FinishGoods (
+	f_id int identity primary key,
+	f_styleNum varchar(50),
+	f_num int,
+	f_image varchar(70)
+);
+
+CREATE PROCEDURE FinishGoods_Insert @f_styleNum varchar(50), @f_num int, @f_image varchar(70)
+AS
+Begin
+	INSERT INTO FinishGoods(f_styleNum, f_num, f_image) VALUES (@f_styleNum, @f_num, @f_image)
+END

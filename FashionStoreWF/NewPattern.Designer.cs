@@ -40,8 +40,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -164,25 +162,6 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "Image";
             // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(98, 483);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(82, 37);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "Test";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(48, 426);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 17);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "File Name";
-            // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
@@ -194,8 +173,6 @@
             this.BackgroundImage = global::FashionStoreWF.Properties.Resources.backgroundSingleColor;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -231,8 +208,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

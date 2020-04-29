@@ -96,6 +96,16 @@ namespace FashionStoreWF
             }
         }
 
+        public void AddFinishGood(FinishGoods finishGood)
+        {
+            using (IDbConnection con = new System.Data.SqlClient.SqlConnection(Helper.ConVal("fashionDB")))
+            {
+                List<FinishGoods> goods = new List<FinishGoods>();
+                goods.Add(finishGood);
+                con.Execute("dbo.FinishGoods_Insert @f_styleNum, @f_num, @f_image", goods);
+            }
+        }
+
         public List<Customer> GetAllCustomers()
         {
             using (IDbConnection con = new System.Data.SqlClient.SqlConnection(Helper.ConVal("fashionDB")))

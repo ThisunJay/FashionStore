@@ -22,5 +22,11 @@ namespace FashionStoreWF
             NewPattern newPattern = new NewPattern();
             newPattern.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FinishGood finishGood = new FinishGood();
+            finishGood.ShowDialog();
+        }
     }
 }

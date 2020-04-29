@@ -28,86 +28,100 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.styleNum = new System.Windows.Forms.TextBox();
+            this.Num = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.imageSel = new System.Windows.Forms.Button();
+            this.ClearBtn = new System.Windows.Forms.Button();
+            this.SubmitBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::FashionStoreWF.Properties.Resources.loginBack;
-            this.pictureBox1.Location = new System.Drawing.Point(197, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(263, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(402, 426);
+            this.pictureBox1.Size = new System.Drawing.Size(536, 524);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox1
+            // styleNum
             // 
-            this.textBox1.Location = new System.Drawing.Point(328, 82);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(238, 20);
-            this.textBox1.TabIndex = 1;
+            this.styleNum.Location = new System.Drawing.Point(437, 101);
+            this.styleNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.styleNum.Name = "styleNum";
+            this.styleNum.Size = new System.Drawing.Size(316, 22);
+            this.styleNum.TabIndex = 1;
             // 
-            // textBox2
+            // Num
             // 
-            this.textBox2.Location = new System.Drawing.Point(328, 138);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(238, 20);
-            this.textBox2.TabIndex = 2;
+            this.Num.Location = new System.Drawing.Point(437, 170);
+            this.Num.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Num.Name = "Num";
+            this.Num.Size = new System.Drawing.Size(316, 22);
+            this.Num.TabIndex = 2;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(328, 195);
+            this.pictureBox2.Location = new System.Drawing.Point(437, 240);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(173, 112);
+            this.pictureBox2.Size = new System.Drawing.Size(231, 138);
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
-            // button1
+            // imageSel
             // 
-            this.button1.Location = new System.Drawing.Point(507, 195);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(59, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Select";
-            this.button1.UseVisualStyleBackColor = true;
+            this.imageSel.Location = new System.Drawing.Point(676, 240);
+            this.imageSel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.imageSel.Name = "imageSel";
+            this.imageSel.Size = new System.Drawing.Size(79, 28);
+            this.imageSel.TabIndex = 4;
+            this.imageSel.Text = "Select";
+            this.imageSel.UseVisualStyleBackColor = true;
+            this.imageSel.Click += new System.EventHandler(this.imageSel_Click);
             // 
-            // button2
+            // ClearBtn
             // 
-            this.button2.Location = new System.Drawing.Point(387, 353);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Clear";
-            this.button2.UseVisualStyleBackColor = true;
+            this.ClearBtn.Location = new System.Drawing.Point(516, 434);
+            this.ClearBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ClearBtn.Name = "ClearBtn";
+            this.ClearBtn.Size = new System.Drawing.Size(100, 28);
+            this.ClearBtn.TabIndex = 5;
+            this.ClearBtn.Text = "Clear";
+            this.ClearBtn.UseVisualStyleBackColor = true;
+            this.ClearBtn.Click += new System.EventHandler(this.ClearBtn_Click);
             // 
-            // button3
+            // SubmitBtn
             // 
-            this.button3.Location = new System.Drawing.Point(491, 353);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "Submit";
-            this.button3.UseVisualStyleBackColor = true;
+            this.SubmitBtn.Location = new System.Drawing.Point(655, 434);
+            this.SubmitBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SubmitBtn.Name = "SubmitBtn";
+            this.SubmitBtn.Size = new System.Drawing.Size(100, 28);
+            this.SubmitBtn.TabIndex = 6;
+            this.SubmitBtn.Text = "Submit";
+            this.SubmitBtn.UseVisualStyleBackColor = true;
+            this.SubmitBtn.Click += new System.EventHandler(this.SubmitBtn_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Image = global::FashionStoreWF.Properties.Resources.loginBack;
-            this.label1.Location = new System.Drawing.Point(226, 89);
+            this.label1.Location = new System.Drawing.Point(301, 110);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 13);
+            this.label1.Size = new System.Drawing.Size(93, 17);
             this.label1.TabIndex = 7;
             this.label1.Text = "Style Number";
             // 
@@ -115,9 +129,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Image = global::FashionStoreWF.Properties.Resources.loginBack;
-            this.label2.Location = new System.Drawing.Point(226, 145);
+            this.label2.Location = new System.Drawing.Point(301, 178);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 13);
+            this.label2.Size = new System.Drawing.Size(120, 17);
             this.label2.TabIndex = 8;
             this.label2.Text = "Number of Pieces";
             // 
@@ -125,9 +140,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Image = global::FashionStoreWF.Properties.Resources.loginBack;
-            this.label3.Location = new System.Drawing.Point(226, 195);
+            this.label3.Location = new System.Drawing.Point(301, 240);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(36, 13);
+            this.label3.Size = new System.Drawing.Size(46, 17);
             this.label3.TabIndex = 9;
             this.label3.Text = "Image";
             // 
@@ -136,34 +152,41 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Image = global::FashionStoreWF.Properties.Resources.loginBack;
-            this.label4.Location = new System.Drawing.Point(304, 29);
+            this.label4.Location = new System.Drawing.Point(405, 36);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(197, 24);
+            this.label4.Size = new System.Drawing.Size(249, 29);
             this.label4.TabIndex = 10;
             this.label4.Text = "Add New Finish Good";
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // FinishGood
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FashionStoreWF.Properties.Resources.backgroundSingleColor;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.SubmitBtn);
+            this.Controls.Add(this.ClearBtn);
+            this.Controls.Add(this.imageSel);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Num);
+            this.Controls.Add(this.styleNum);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FinishGood";
             this.Text = "Finish Good";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -172,15 +195,16 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox styleNum;
+        private System.Windows.Forms.TextBox Num;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button imageSel;
+        private System.Windows.Forms.Button ClearBtn;
+        private System.Windows.Forms.Button SubmitBtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

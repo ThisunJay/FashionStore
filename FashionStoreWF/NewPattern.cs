@@ -81,10 +81,5 @@ namespace FashionStoreWF
             ClearForm();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            //label5.Text = Path.GetFileName(fileName);
-            label5.Text = PatternDate.Value.ToString();
-        }
     }
 }
