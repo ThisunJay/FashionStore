@@ -105,3 +105,11 @@ CREATE TABLE Attendance (
 	e_name varchar(100),
 	a_date datetime
 );
+
+CREATE PROCEDURE Attendance_Insert @e_id int, @e_name varchar(100), @a_date datetime
+AS
+Begin
+	INSERT INTO Attendance(e_id, e_name, a_date) VALUES (@e_id, @e_name, @a_date)
+END
+
+select * from Attendance
