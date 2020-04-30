@@ -100,12 +100,19 @@
     <Compile Include="HRM.Designer.cs">
       <DependentUpon>HRM.cs</DependentUpon>
     </Compile>
+    <Compile Include="MarkAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarkAttendance.Designer.cs">
+      <DependentUpon>MarkAttendance.cs</DependentUpon>
+    </Compile>
     <Compile Include="Marketing.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Marketing.Designer.cs">
       <DependentUpon>Marketing.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Attendance.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\FinishGoods.cs" />
@@ -163,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HRM.resx">
       <DependentUpon>HRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarkAttendance.resx">
+      <DependentUpon>MarkAttendance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Marketing.resx">
       <DependentUpon>Marketing.cs</DependentUpon>

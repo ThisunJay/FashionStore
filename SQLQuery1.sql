@@ -98,3 +98,10 @@ AS
 Begin
 	INSERT INTO FinishGoods(f_styleNum, f_num, f_image) VALUES (@f_styleNum, @f_num, @f_image)
 END
+
+CREATE TABLE Attendance (
+	a_id int identity primary key,
+	e_id int references Employees(e_id),
+	e_name varchar(100),
+	a_date datetime
+);
