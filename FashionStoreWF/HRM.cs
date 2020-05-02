@@ -47,5 +47,20 @@ namespace FashionStoreWF
             var source = new BindingSource(bindingList, null);
             dataGridView1.DataSource = source;
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            AddPayment addPayment = new AddPayment();
+            addPayment.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            DataAccess db = new DataAccess();
+            var list = db.GetPayments();
+            var bindingList = new BindingList<Payment>(list);
+            var source = new BindingSource(bindingList, null);
+            dataGridView1.DataSource = source;
+        }
     }
 }

@@ -113,3 +113,18 @@ Begin
 END
 
 select * from Attendance
+
+CREATE TABLE Payments (
+	p_id int identity primary key,
+	p_invoiceNum varchar(50),
+	p_amount float,
+	p_paidBy varchar(100),
+	p_paidTo varchar(100),
+	p_bank varchar(50)
+);
+
+CREATE PROCEDURE Payments_Insert @p_invoiceNum varchar(50), @p_amount float, @p_paidBy varchar(100), @p_paidTo varchar(100), @p_bank varchar(50)
+AS
+Begin
+	INSERT INTO Payments(p_invoiceNum, p_amount, p_paidBy, p_paidTo, p_bank) VALUES (@p_invoiceNum, @p_amount, @p_paidBy, @p_paidTo, @p_bank)
+END

@@ -116,6 +116,16 @@ namespace FashionStoreWF
             }
         }
 
+        public void AddPayment(Payment payment)
+        {
+            using (IDbConnection con = new System.Data.SqlClient.SqlConnection(Helper.ConVal("fashionDB")))
+            {
+                List<Payment> payments = new List<Payment>();
+                payments.Add(payment);
+                con.Execute("dbo.Payments_Insert @p_invoiceNum, @p_amount, @p_paidBy, @p_paidTo, @p_bank", payments);
+            }
+        }
+
         public List<Customer> GetAllCustomers()
         {
             using (IDbConnection con = new System.Data.SqlClient.SqlConnection(Helper.ConVal("fashionDB")))
@@ -160,6 +170,15 @@ namespace FashionStoreWF
             {
                 var all = con.Query<Attendance>($"select * from Attendance").ToList();
                 return all;
+            }
+        }
+
+        public List<Payment> GetPayments()
+        {
+            using (IDbConnection con = new System.Data.SqlClient.SqlConnection(Helper.ConVal("fashionDB")))
+            {
+                var payments = con.Query<Payment>($"select * from Payments").ToList();
+                return payments;
             }
         }
     }
