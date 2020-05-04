@@ -30,6 +30,7 @@
         {
             this.ptnBtn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.dBoard = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ptnBtn
@@ -54,6 +55,16 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // dBoard
+            // 
+            this.dBoard.Location = new System.Drawing.Point(12, 503);
+            this.dBoard.Name = "dBoard";
+            this.dBoard.Size = new System.Drawing.Size(98, 39);
+            this.dBoard.TabIndex = 2;
+            this.dBoard.Text = "Dashboard";
+            this.dBoard.UseVisualStyleBackColor = true;
+            this.dBoard.Click += new System.EventHandler(this.dBoard_Click);
+            // 
             // Patterns
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -61,6 +72,7 @@
             this.BackgroundImage = global::FashionStoreWF.Properties.Resources.backgroundSingleColor;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.dBoard);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.ptnBtn);
             this.Name = "Patterns";
@@ -73,5 +85,6 @@
 
         private System.Windows.Forms.Button ptnBtn;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button dBoard;
     }
 }

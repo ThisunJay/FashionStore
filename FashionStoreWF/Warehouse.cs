@@ -43,5 +43,12 @@ namespace FashionStoreWF
             var source = new BindingSource(bindingList, null);
             dataGridView1.DataSource = source;
         }
+
+        private void dBoard_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            this.Hide();
+            dashboard.ShowDialog();
+        }
     }
 }

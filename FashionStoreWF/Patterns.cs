@@ -28,5 +28,12 @@ namespace FashionStoreWF
             FinishGood finishGood = new FinishGood();
             finishGood.ShowDialog();
         }
+
+        private void dBoard_Click(object sender, EventArgs e)
+        {
+            Dashboard form1 = new Dashboard();
+            this.Hide();
+            form1.ShowDialog();
+        }
     }
 }

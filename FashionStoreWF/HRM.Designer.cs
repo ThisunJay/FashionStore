@@ -36,6 +36,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dBoard = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -119,6 +120,16 @@
             this.dataGridView1.Size = new System.Drawing.Size(817, 404);
             this.dataGridView1.TabIndex = 7;
             // 
+            // dBoard
+            // 
+            this.dBoard.Location = new System.Drawing.Point(12, 510);
+            this.dBoard.Name = "dBoard";
+            this.dBoard.Size = new System.Drawing.Size(93, 32);
+            this.dBoard.TabIndex = 8;
+            this.dBoard.Text = "Dashboard";
+            this.dBoard.UseVisualStyleBackColor = true;
+            this.dBoard.Click += new System.EventHandler(this.dBoard_Click);
+            // 
             // HRM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -126,6 +137,7 @@
             this.BackgroundImage = global::FashionStoreWF.Properties.Resources.backgroundSingleColor;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.dBoard);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -152,5 +164,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button dBoard;
     }
 }
