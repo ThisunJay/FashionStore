@@ -31,6 +31,8 @@
             this.ptnBtn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dBoard = new System.Windows.Forms.Button();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.getImgs = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ptnBtn
@@ -65,6 +67,25 @@
             this.dBoard.UseVisualStyleBackColor = true;
             this.dBoard.Click += new System.EventHandler(this.dBoard_Click);
             // 
+            // listView1
+            // 
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(235, 71);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(804, 458);
+            this.listView1.TabIndex = 3;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
+            // getImgs
+            // 
+            this.getImgs.Location = new System.Drawing.Point(122, 71);
+            this.getImgs.Name = "getImgs";
+            this.getImgs.Size = new System.Drawing.Size(89, 39);
+            this.getImgs.TabIndex = 4;
+            this.getImgs.Text = "Get Images";
+            this.getImgs.UseVisualStyleBackColor = true;
+            this.getImgs.Click += new System.EventHandler(this.getImgs_Click);
+            // 
             // Patterns
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -72,6 +93,8 @@
             this.BackgroundImage = global::FashionStoreWF.Properties.Resources.backgroundSingleColor;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.getImgs);
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.dBoard);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.ptnBtn);
@@ -86,5 +109,7 @@
         private System.Windows.Forms.Button ptnBtn;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button dBoard;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Button getImgs;
     }
 }
