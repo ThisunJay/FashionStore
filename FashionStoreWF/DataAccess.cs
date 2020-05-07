@@ -181,5 +181,23 @@ namespace FashionStoreWF
                 return payments;
             }
         }
+
+        public List<FinishGoods> GetFinishGoods() 
+        {
+            using (IDbConnection con = new System.Data.SqlClient.SqlConnection(Helper.ConVal("fashionDB")))
+            {
+                var goods = con.Query<FinishGoods>($"select * from FinishGoods").ToList();
+                return goods;
+            }
+        }
+
+        public List<Pattern> GetAllPatterns()
+        {
+            using (IDbConnection con = new System.Data.SqlClient.SqlConnection(Helper.ConVal("fashionDB")))
+            {
+                var patterns = con.Query<Pattern>($"select * from Patterns").ToList();
+                return patterns;
+            }
+        }
     }
 }
