@@ -33,6 +33,8 @@
             this.dBoard = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
             this.getImgs = new System.Windows.Forms.Button();
+            this.PatternsBtn = new System.Windows.Forms.Button();
+            this.finishGoodsBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ptnBtn
@@ -78,13 +80,33 @@
             // 
             // getImgs
             // 
-            this.getImgs.Location = new System.Drawing.Point(122, 71);
+            this.getImgs.Location = new System.Drawing.Point(521, 11);
             this.getImgs.Name = "getImgs";
             this.getImgs.Size = new System.Drawing.Size(89, 39);
             this.getImgs.TabIndex = 4;
             this.getImgs.Text = "Get Images";
             this.getImgs.UseVisualStyleBackColor = true;
             this.getImgs.Click += new System.EventHandler(this.getImgs_Click);
+            // 
+            // PatternsBtn
+            // 
+            this.PatternsBtn.Location = new System.Drawing.Point(121, 115);
+            this.PatternsBtn.Name = "PatternsBtn";
+            this.PatternsBtn.Size = new System.Drawing.Size(108, 38);
+            this.PatternsBtn.TabIndex = 5;
+            this.PatternsBtn.Text = "Patterns";
+            this.PatternsBtn.UseVisualStyleBackColor = true;
+            this.PatternsBtn.Click += new System.EventHandler(this.PatternsBtn_Click);
+            // 
+            // finishGoodsBtn
+            // 
+            this.finishGoodsBtn.Location = new System.Drawing.Point(121, 71);
+            this.finishGoodsBtn.Name = "finishGoodsBtn";
+            this.finishGoodsBtn.Size = new System.Drawing.Size(108, 38);
+            this.finishGoodsBtn.TabIndex = 6;
+            this.finishGoodsBtn.Text = "Finish Goods";
+            this.finishGoodsBtn.UseVisualStyleBackColor = true;
+            this.finishGoodsBtn.Click += new System.EventHandler(this.finishGoodsBtn_Click);
             // 
             // Patterns
             // 
@@ -93,6 +115,8 @@
             this.BackgroundImage = global::FashionStoreWF.Properties.Resources.backgroundSingleColor;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.finishGoodsBtn);
+            this.Controls.Add(this.PatternsBtn);
             this.Controls.Add(this.getImgs);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.dBoard);
@@ -111,5 +135,7 @@
         private System.Windows.Forms.Button dBoard;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Button getImgs;
+        private System.Windows.Forms.Button PatternsBtn;
+        private System.Windows.Forms.Button finishGoodsBtn;
     }
 }

@@ -32,24 +32,68 @@ namespace FashionStoreWF
 
             var path = Directory.GetFiles(Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory()))) + @"\\images", "*.*");
 
-            var path1 = Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory()))) + @"\Images";
-            var path2 = path1.Replace("\\", "/");
-
-            var paths = Directory.GetFiles(path2, "*.*");
-
-            try
+            foreach (var item in path)
             {
-                foreach (var item in paths)
-                {
-                    imgs.Images.Add(Image.FromFile(item));
-                }
-            }
-            catch(Exception e)
-            {
-                MessageBox.Show(e.Message);
+                imgs.Images.Add("Image", Image.FromFile(item));
             }
 
-            listView1.SmallImageList = imgs;
+            listView1.View = View.LargeIcon;
+            listView1.LargeImageList = imgs;
+
+            for (int i = 0; i < imgs.Images.Count; i++)
+            {
+                ListViewItem lvi = new ListViewItem();
+                lvi.ImageIndex = i;
+                lvi.Text = "cal icon";
+                listView1.Items.Add(lvi);
+            }
+
+        }
+
+        public void Populate(String[] imagesList)
+        {
+            ImageList imgs = new ImageList();
+            imgs.ImageSize = new Size(100, 100);
+
+            var path = Directory.GetFiles(Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory()))) + @"\\images", "*.*");
+
+            List<string> paths = null;
+
+            for (int i = 0; i < imagesList.Length; i++)
+            {
+                var onePaths = getImages(path, imagesList[i]);
+
+                paths.Add(onePaths);
+            }
+
+            foreach (var item in paths)
+            {
+                imgs.Images.Add("Image", Image.FromFile(item));
+            }
+
+            listView1.View = View.LargeIcon;
+            listView1.LargeImageList = imgs;
+
+            for (int i = 0; i < imgs.Images.Count; i++)
+            {
+                ListViewItem lvi = new ListViewItem();
+                lvi.ImageIndex = i;
+                lvi.Text = "cal icon";
+                listView1.Items.Add(lvi);
+            }
+
+        }
+
+        public string getImages(string[] files, string imageName)
+        {
+            foreach (var item in files)
+            {
+                var con = item.Contains(imageName);
+                if (con == true)
+                    return item;
+            }
+
+            return "Nothing";
         }
 
         private void ptnBtn_Click(object sender, EventArgs e)
@@ -74,6 +118,36 @@ namespace FashionStoreWF
         private void getImgs_Click(object sender, EventArgs e)
         {
             Populate();
+        }
+
+        private void finishGoodsBtn_Click(object sender, EventArgs e)
+        {
+            DataAccess db = new DataAccess();
+            var AllGoods = db.GetFinishGoods();
+
+            String[] images = null;
+
+            for (int i = 0; i < AllGoods.Count; i++)
+            {
+                images[i] = AllGoods[i].f_image;
+            }
+
+            Populate(images);
+        }
+
+        private void PatternsBtn_Click(object sender, EventArgs e)
+        {
+            DataAccess db = new DataAccess();
+            var AllPatterns = db.GetAllPatterns();
+
+            String[] images = null;
+
+            for (int i = 0; i < AllPatterns.Count; i++)
+            {
+                images[i] = AllPatterns[i].p_image;
+            }
+
+            Populate(images);
         }
     }
 }
