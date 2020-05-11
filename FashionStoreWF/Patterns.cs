@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FashionStoreWF.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -50,20 +51,32 @@ namespace FashionStoreWF
 
         }
 
-        public void Populate(String[] imagesList)
+        public void Populate(List<Pattern> patterns)
         {
             ImageList imgs = new ImageList();
             imgs.ImageSize = new Size(100, 100);
 
             var path = Directory.GetFiles(Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory()))) + @"\\images", "*.*");
 
-            List<string> paths = null;
+            string[] paths = { "tem1" };
 
-            for (int i = 0; i < imagesList.Length; i++)
+            //for (int i = 0; i < imagesList.Length; i++)
+            //{
+            //    var onePaths = getImages(path, imagesList[i]);
+
+            //    paths.Add(onePaths);
+            //}
+
+            for (int i = 0; i < patterns.Count; i++)
             {
-                var onePaths = getImages(path, imagesList[i]);
 
-                paths.Add(onePaths);
+                foreach (var item in path)
+                {
+                    if (item.Contains(patterns[i].p_image))
+                    {
+                        paths[i] = item;
+                    }
+                }
             }
 
             foreach (var item in paths)
@@ -132,7 +145,7 @@ namespace FashionStoreWF
                 images[i] = AllGoods[i].f_image;
             }
 
-            Populate(images);
+            //Populate(images);
         }
 
         private void PatternsBtn_Click(object sender, EventArgs e)
@@ -140,14 +153,7 @@ namespace FashionStoreWF
             DataAccess db = new DataAccess();
             var AllPatterns = db.GetAllPatterns();
 
-            String[] images = null;
-
-            for (int i = 0; i < AllPatterns.Count; i++)
-            {
-                images[i] = AllPatterns[i].p_image;
-            }
-
-            Populate(images);
+            Populate(AllPatterns);
         }
     }
 }
