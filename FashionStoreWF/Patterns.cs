@@ -22,6 +22,7 @@ namespace FashionStoreWF
 
             listView1.Columns.Add("Image", 150);
             listView1.AutoResizeColumn(0, ColumnHeaderAutoResizeStyle.HeaderSize);
+
         }
 
         //Populate List View
@@ -53,19 +54,14 @@ namespace FashionStoreWF
 
         public void Populate(List<Pattern> patterns)
         {
+            listView1.Items.Clear();
+
             ImageList imgs = new ImageList();
             imgs.ImageSize = new Size(100, 100);
 
             var path = Directory.GetFiles(Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory()))) + @"\\images", "*.*");
 
             string[] paths = { "tem1" };
-
-            //for (int i = 0; i < imagesList.Length; i++)
-            //{
-            //    var onePaths = getImages(path, imagesList[i]);
-
-            //    paths.Add(onePaths);
-            //}
 
             for (int i = 0; i < patterns.Count; i++)
             {
@@ -95,6 +91,48 @@ namespace FashionStoreWF
                 listView1.Items.Add(lvi);
             }
 
+        }
+
+        public void Populate(List<FinishGoods> goods)
+        {
+            listView1.Items.Clear();
+
+            ImageList imgs = new ImageList();
+            imgs.ImageSize = new Size(100, 100);
+
+            var path = Directory.GetFiles(Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory()))) + @"\\images", "*.*");
+
+            string[] paths = { "tem1" };
+
+            for (int i = 0; i < goods.Count; i++)
+            {
+
+                foreach (var item in path)
+                {
+                    if (item.Contains(goods[i].f_image))
+                    {
+                        paths[i] = item;
+                    }
+                }
+            }
+
+            foreach (var item in paths)
+            {
+                imgs.Images.Add("Image", Image.FromFile(item));
+            }
+
+            listView1.View = View.LargeIcon;
+            listView1.LargeImageList = imgs;
+
+            for (int i = 0; i < imgs.Images.Count; i++)
+            {
+                ListViewItem lvi = new ListViewItem();
+                lvi.ImageIndex = i;
+                lvi.Text = "cal icon";
+                listView1.Items.Add(lvi);
+            }
+
+            //destroying objects
         }
 
         public string getImages(string[] files, string imageName)
@@ -128,24 +166,12 @@ namespace FashionStoreWF
             form1.ShowDialog();
         }
 
-        private void getImgs_Click(object sender, EventArgs e)
-        {
-            Populate();
-        }
-
         private void finishGoodsBtn_Click(object sender, EventArgs e)
         {
             DataAccess db = new DataAccess();
             var AllGoods = db.GetFinishGoods();
 
-            String[] images = null;
-
-            for (int i = 0; i < AllGoods.Count; i++)
-            {
-                images[i] = AllGoods[i].f_image;
-            }
-
-            //Populate(images);
+            Populate(AllGoods);
         }
 
         private void PatternsBtn_Click(object sender, EventArgs e)
@@ -154,6 +180,24 @@ namespace FashionStoreWF
             var AllPatterns = db.GetAllPatterns();
 
             Populate(AllPatterns);
+        }
+
+        private void listView1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            if (listView1.SelectedItems.Count >= 1)
+            {
+                ListViewItem item = listView1.SelectedItems[0];
+
+                if (item.Bounds.Contains(e.Location))
+                {
+                    var imgs = listView1.LargeImageList;
+                    var img = imgs.Images[item.ImageIndex];
+                    //MessageBox.Show("Double Clicked on :" + item.Text);
+                    ShowItem showItem = new ShowItem();
+                    showItem.setDetails(img, item.Text);
+                    showItem.ShowDialog();
+                }
+            }
         }
     }
 }

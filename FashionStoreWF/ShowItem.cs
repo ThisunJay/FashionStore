@@ -16,5 +16,12 @@ namespace FashionStoreWF
         {
             InitializeComponent();
         }
+
+        public void setDetails(Image img, string text)
+        {
+            pictureBox1.Image = img;
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            label1.Text = text;
+        }
     }
 }
