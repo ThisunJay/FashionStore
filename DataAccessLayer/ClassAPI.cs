@@ -34,8 +34,7 @@ namespace DataAccessLayer
             }
             catch (Exception e)
             {
-                Console.Out.WriteLine("-----------------");
-                Console.Out.WriteLine(e.Message);
+                
             }
 
         }

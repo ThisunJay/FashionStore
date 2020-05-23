@@ -9,5 +9,10 @@ namespace DataAccessLayer
     public class Posts
     {
         public string PostsObject { get; set; }
+
+        public string getDetails()
+        {
+            return PostsObject;
+        }
     }
 }
