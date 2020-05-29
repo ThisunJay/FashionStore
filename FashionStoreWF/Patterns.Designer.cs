@@ -34,6 +34,8 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.PatternsBtn = new System.Windows.Forms.Button();
             this.finishGoodsBtn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // ptnBtn
@@ -98,6 +100,17 @@
             this.finishGoodsBtn.UseVisualStyleBackColor = true;
             this.finishGoodsBtn.Click += new System.EventHandler(this.finishGoodsBtn_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::FashionStoreWF.Properties.Resources.icons8_hanger_64;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(53, 258);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(115, 98);
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
             // Patterns
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -105,6 +118,7 @@
             this.BackgroundImage = global::FashionStoreWF.Properties.Resources.backgroundSingleColor;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.finishGoodsBtn);
             this.Controls.Add(this.PatternsBtn);
             this.Controls.Add(this.listView1);
@@ -113,6 +127,7 @@
             this.Controls.Add(this.ptnBtn);
             this.Name = "Patterns";
             this.Text = "Patterns";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -125,5 +140,6 @@
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Button PatternsBtn;
         private System.Windows.Forms.Button finishGoodsBtn;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

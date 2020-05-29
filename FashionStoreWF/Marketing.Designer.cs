@@ -35,8 +35,10 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.backDashboard = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -113,6 +115,17 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImage = global::FashionStoreWF.Properties.Resources.icons8_human_resources_100;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(40, 15);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(115, 98);
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
+            // 
             // Marketing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -120,6 +133,7 @@
             this.BackgroundImage = global::FashionStoreWF.Properties.Resources.backgroundSingleColor;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.backDashboard);
             this.Controls.Add(this.dataGridView1);
@@ -132,6 +146,7 @@
             this.Text = "Marketing";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -145,5 +160,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button backDashboard;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
