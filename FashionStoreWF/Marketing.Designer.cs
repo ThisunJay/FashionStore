@@ -118,7 +118,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = global::FashionStoreWF.Properties.Resources.icons8_human_resources_100;
+            this.pictureBox2.BackgroundImage = global::FashionStoreWF.Properties.Resources.icons8_omnichannel_100;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Location = new System.Drawing.Point(40, 15);
             this.pictureBox2.Name = "pictureBox2";
