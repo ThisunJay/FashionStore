@@ -41,6 +41,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -56,7 +57,8 @@
             // 
             // addBtn
             // 
-            this.addBtn.Location = new System.Drawing.Point(527, 161);
+            this.addBtn.Image = global::FashionStoreWF.Properties.Resources.loginBack;
+            this.addBtn.Location = new System.Drawing.Point(431, 329);
             this.addBtn.Name = "addBtn";
             this.addBtn.Size = new System.Drawing.Size(116, 36);
             this.addBtn.TabIndex = 1;
@@ -66,7 +68,8 @@
             // 
             // clrBtn
             // 
-            this.clrBtn.Location = new System.Drawing.Point(527, 220);
+            this.clrBtn.Image = global::FashionStoreWF.Properties.Resources.loginBack;
+            this.clrBtn.Location = new System.Drawing.Point(431, 388);
             this.clrBtn.Name = "clrBtn";
             this.clrBtn.Size = new System.Drawing.Size(116, 36);
             this.clrBtn.TabIndex = 2;
@@ -151,6 +154,18 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(425, 22);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(179, 32);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Add Supplier";
+            // 
             // AddSupplier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -158,6 +173,7 @@
             this.BackgroundImage = global::FashionStoreWF.Properties.Resources.backgroundSingleColor;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(779, 450);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -169,6 +185,7 @@
             this.Controls.Add(this.clrBtn);
             this.Controls.Add(this.addBtn);
             this.Controls.Add(this.pictureBox1);
+            this.Name = "AddSupplier";
             this.Text = "Add Supplier";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
@@ -191,5 +208,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Label label6;
     }
 }
