@@ -110,6 +110,7 @@
             // 
             // submitBtn
             // 
+            this.submitBtn.Image = global::FashionStoreWF.Properties.Resources.loginBack;
             this.submitBtn.Location = new System.Drawing.Point(920, 453);
             this.submitBtn.Name = "submitBtn";
             this.submitBtn.Size = new System.Drawing.Size(97, 37);
@@ -120,6 +121,7 @@
             // 
             // clrBtn
             // 
+            this.clrBtn.Image = global::FashionStoreWF.Properties.Resources.loginBack;
             this.clrBtn.Location = new System.Drawing.Point(761, 453);
             this.clrBtn.Name = "clrBtn";
             this.clrBtn.Size = new System.Drawing.Size(97, 37);
