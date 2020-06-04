@@ -172,6 +172,7 @@
             // RegBtn
             // 
             this.RegBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RegBtn.Image = global::FashionStoreWF.Properties.Resources.loginBack;
             this.RegBtn.Location = new System.Drawing.Point(727, 404);
             this.RegBtn.Margin = new System.Windows.Forms.Padding(4);
             this.RegBtn.Name = "RegBtn";
@@ -189,6 +190,7 @@
             // 
             this.backToLgn.BackgroundImage = global::FashionStoreWF.Properties.Resources.loginBack;
             this.backToLgn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backToLgn.Image = global::FashionStoreWF.Properties.Resources.loginBack;
             this.backToLgn.Location = new System.Drawing.Point(27, 484);
             this.backToLgn.Name = "backToLgn";
             this.backToLgn.Size = new System.Drawing.Size(98, 43);
