@@ -50,7 +50,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::FashionStoreWF.Properties.Resources.loginBack;
             this.pictureBox1.Location = new System.Drawing.Point(263, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(536, 524);
             this.pictureBox1.TabIndex = 0;
@@ -59,7 +59,7 @@
             // styleNum
             // 
             this.styleNum.Location = new System.Drawing.Point(437, 101);
-            this.styleNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.styleNum.Margin = new System.Windows.Forms.Padding(4);
             this.styleNum.Name = "styleNum";
             this.styleNum.Size = new System.Drawing.Size(316, 22);
             this.styleNum.TabIndex = 1;
@@ -67,7 +67,7 @@
             // Num
             // 
             this.Num.Location = new System.Drawing.Point(437, 170);
-            this.Num.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Num.Margin = new System.Windows.Forms.Padding(4);
             this.Num.Name = "Num";
             this.Num.Size = new System.Drawing.Size(316, 22);
             this.Num.TabIndex = 2;
@@ -75,7 +75,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Location = new System.Drawing.Point(437, 240);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(231, 138);
             this.pictureBox2.TabIndex = 3;
@@ -83,8 +83,9 @@
             // 
             // imageSel
             // 
+            this.imageSel.BackgroundImage = global::FashionStoreWF.Properties.Resources.loginBack;
             this.imageSel.Location = new System.Drawing.Point(676, 240);
-            this.imageSel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.imageSel.Margin = new System.Windows.Forms.Padding(4);
             this.imageSel.Name = "imageSel";
             this.imageSel.Size = new System.Drawing.Size(79, 28);
             this.imageSel.TabIndex = 4;
@@ -94,8 +95,9 @@
             // 
             // ClearBtn
             // 
+            this.ClearBtn.BackgroundImage = global::FashionStoreWF.Properties.Resources.loginBack;
             this.ClearBtn.Location = new System.Drawing.Point(516, 434);
-            this.ClearBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ClearBtn.Margin = new System.Windows.Forms.Padding(4);
             this.ClearBtn.Name = "ClearBtn";
             this.ClearBtn.Size = new System.Drawing.Size(100, 28);
             this.ClearBtn.TabIndex = 5;
@@ -105,8 +107,9 @@
             // 
             // SubmitBtn
             // 
+            this.SubmitBtn.BackgroundImage = global::FashionStoreWF.Properties.Resources.loginBack;
             this.SubmitBtn.Location = new System.Drawing.Point(655, 434);
-            this.SubmitBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SubmitBtn.Margin = new System.Windows.Forms.Padding(4);
             this.SubmitBtn.Name = "SubmitBtn";
             this.SubmitBtn.Size = new System.Drawing.Size(100, 28);
             this.SubmitBtn.TabIndex = 6;
@@ -181,7 +184,7 @@
             this.Controls.Add(this.Num);
             this.Controls.Add(this.styleNum);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FinishGood";
             this.Text = "Finish Good";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
