@@ -54,6 +54,7 @@
             // 
             // empBtn
             // 
+            this.empBtn.Image = global::FashionStoreWF.Properties.Resources.loginBack;
             this.empBtn.Location = new System.Drawing.Point(12, 182);
             this.empBtn.Name = "empBtn";
             this.empBtn.Size = new System.Drawing.Size(177, 42);
@@ -64,6 +65,7 @@
             // 
             // button2
             // 
+            this.button2.Image = global::FashionStoreWF.Properties.Resources.loginBack;
             this.button2.Location = new System.Drawing.Point(12, 246);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(177, 42);
@@ -74,6 +76,7 @@
             // 
             // button3
             // 
+            this.button3.Image = global::FashionStoreWF.Properties.Resources.loginBack;
             this.button3.Location = new System.Drawing.Point(12, 305);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(177, 42);
@@ -84,6 +87,7 @@
             // 
             // adEmpBtn
             // 
+            this.adEmpBtn.Image = global::FashionStoreWF.Properties.Resources.loginBack;
             this.adEmpBtn.Location = new System.Drawing.Point(207, 39);
             this.adEmpBtn.Name = "adEmpBtn";
             this.adEmpBtn.Size = new System.Drawing.Size(122, 31);
@@ -94,6 +98,7 @@
             // 
             // button5
             // 
+            this.button5.Image = global::FashionStoreWF.Properties.Resources.loginBack;
             this.button5.Location = new System.Drawing.Point(348, 39);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(144, 31);
@@ -104,6 +109,7 @@
             // 
             // button6
             // 
+            this.button6.Image = global::FashionStoreWF.Properties.Resources.loginBack;
             this.button6.Location = new System.Drawing.Point(507, 39);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(122, 31);
@@ -124,6 +130,7 @@
             // 
             // dBoard
             // 
+            this.dBoard.Image = global::FashionStoreWF.Properties.Resources.loginBack;
             this.dBoard.Location = new System.Drawing.Point(12, 510);
             this.dBoard.Name = "dBoard";
             this.dBoard.Size = new System.Drawing.Size(93, 32);

@@ -68,6 +68,8 @@
             // 
             // markBtn
             // 
+            this.markBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.markBtn.Image = global::FashionStoreWF.Properties.Resources.backgroundSingleColor;
             this.markBtn.Location = new System.Drawing.Point(670, 337);
             this.markBtn.Name = "markBtn";
             this.markBtn.Size = new System.Drawing.Size(102, 36);
