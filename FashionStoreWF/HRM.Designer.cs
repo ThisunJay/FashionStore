@@ -87,10 +87,11 @@
             // 
             // adEmpBtn
             // 
-            this.adEmpBtn.Image = global::FashionStoreWF.Properties.Resources.loginBack;
+            this.adEmpBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.adEmpBtn.Image = global::FashionStoreWF.Properties.Resources.backgroundSingleColor;
             this.adEmpBtn.Location = new System.Drawing.Point(207, 39);
             this.adEmpBtn.Name = "adEmpBtn";
-            this.adEmpBtn.Size = new System.Drawing.Size(122, 31);
+            this.adEmpBtn.Size = new System.Drawing.Size(122, 44);
             this.adEmpBtn.TabIndex = 4;
             this.adEmpBtn.Text = "Add Employee";
             this.adEmpBtn.UseVisualStyleBackColor = true;
@@ -98,10 +99,11 @@
             // 
             // button5
             // 
-            this.button5.Image = global::FashionStoreWF.Properties.Resources.loginBack;
+            this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button5.Image = global::FashionStoreWF.Properties.Resources.backgroundSingleColor;
             this.button5.Location = new System.Drawing.Point(348, 39);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(144, 31);
+            this.button5.Size = new System.Drawing.Size(144, 44);
             this.button5.TabIndex = 5;
             this.button5.Text = "Mark Attendance";
             this.button5.UseVisualStyleBackColor = true;
@@ -109,10 +111,11 @@
             // 
             // button6
             // 
-            this.button6.Image = global::FashionStoreWF.Properties.Resources.loginBack;
+            this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button6.Image = global::FashionStoreWF.Properties.Resources.backgroundSingleColor;
             this.button6.Location = new System.Drawing.Point(507, 39);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(122, 31);
+            this.button6.Size = new System.Drawing.Size(122, 44);
             this.button6.TabIndex = 6;
             this.button6.Text = "Add Payment";
             this.button6.UseVisualStyleBackColor = true;

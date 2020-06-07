@@ -62,6 +62,7 @@
             // 
             // dBoard
             // 
+            this.dBoard.Image = global::FashionStoreWF.Properties.Resources.loginBack;
             this.dBoard.Location = new System.Drawing.Point(12, 503);
             this.dBoard.Name = "dBoard";
             this.dBoard.Size = new System.Drawing.Size(98, 39);
@@ -82,6 +83,7 @@
             // 
             // PatternsBtn
             // 
+            this.PatternsBtn.Image = global::FashionStoreWF.Properties.Resources.loginBack;
             this.PatternsBtn.Location = new System.Drawing.Point(121, 115);
             this.PatternsBtn.Name = "PatternsBtn";
             this.PatternsBtn.Size = new System.Drawing.Size(108, 38);
@@ -92,6 +94,7 @@
             // 
             // finishGoodsBtn
             // 
+            this.finishGoodsBtn.Image = global::FashionStoreWF.Properties.Resources.loginBack;
             this.finishGoodsBtn.Location = new System.Drawing.Point(121, 71);
             this.finishGoodsBtn.Name = "finishGoodsBtn";
             this.finishGoodsBtn.Size = new System.Drawing.Size(108, 38);

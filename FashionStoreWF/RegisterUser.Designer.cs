@@ -172,7 +172,8 @@
             // RegBtn
             // 
             this.RegBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegBtn.Image = global::FashionStoreWF.Properties.Resources.loginBack;
+            this.RegBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.RegBtn.Image = global::FashionStoreWF.Properties.Resources.backgroundSingleColor;
             this.RegBtn.Location = new System.Drawing.Point(727, 404);
             this.RegBtn.Margin = new System.Windows.Forms.Padding(4);
             this.RegBtn.Name = "RegBtn";

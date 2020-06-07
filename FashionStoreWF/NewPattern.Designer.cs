@@ -95,10 +95,12 @@
             // 
             // button1
             // 
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Image = global::FashionStoreWF.Properties.Resources.backgroundSingleColor;
             this.button1.Location = new System.Drawing.Point(653, 252);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(67, 28);
+            this.button1.Size = new System.Drawing.Size(67, 42);
             this.button1.TabIndex = 5;
             this.button1.Text = "Upload";
             this.button1.UseVisualStyleBackColor = true;
@@ -106,10 +108,12 @@
             // 
             // button2
             // 
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Image = global::FashionStoreWF.Properties.Resources.backgroundSingleColor;
             this.button2.Location = new System.Drawing.Point(387, 455);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 28);
+            this.button2.Size = new System.Drawing.Size(100, 40);
             this.button2.TabIndex = 6;
             this.button2.Text = "Clear";
             this.button2.UseVisualStyleBackColor = true;
@@ -117,10 +121,12 @@
             // 
             // button3
             // 
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.Image = global::FashionStoreWF.Properties.Resources.backgroundSingleColor;
             this.button3.Location = new System.Drawing.Point(568, 455);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 28);
+            this.button3.Size = new System.Drawing.Size(100, 40);
             this.button3.TabIndex = 7;
             this.button3.Text = "Submit";
             this.button3.UseVisualStyleBackColor = true;

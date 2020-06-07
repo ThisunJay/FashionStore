@@ -73,10 +73,11 @@
             // 
             // addBtn
             // 
-            this.addBtn.Image = global::FashionStoreWF.Properties.Resources.loginBack;
+            this.addBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.addBtn.Image = global::FashionStoreWF.Properties.Resources.backgroundSingleColor;
             this.addBtn.Location = new System.Drawing.Point(247, 45);
             this.addBtn.Name = "addBtn";
-            this.addBtn.Size = new System.Drawing.Size(109, 33);
+            this.addBtn.Size = new System.Drawing.Size(118, 42);
             this.addBtn.TabIndex = 3;
             this.addBtn.Text = "Add Item";
             this.addBtn.UseVisualStyleBackColor = true;
