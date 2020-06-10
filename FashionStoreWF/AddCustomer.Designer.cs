@@ -110,10 +110,11 @@
             // 
             // submitBtn
             // 
-            this.submitBtn.Image = global::FashionStoreWF.Properties.Resources.loginBack;
-            this.submitBtn.Location = new System.Drawing.Point(920, 453);
+            this.submitBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.submitBtn.Image = global::FashionStoreWF.Properties.Resources.backgroundSingleColor;
+            this.submitBtn.Location = new System.Drawing.Point(909, 453);
             this.submitBtn.Name = "submitBtn";
-            this.submitBtn.Size = new System.Drawing.Size(97, 37);
+            this.submitBtn.Size = new System.Drawing.Size(108, 46);
             this.submitBtn.TabIndex = 7;
             this.submitBtn.Text = "Submit";
             this.submitBtn.UseVisualStyleBackColor = true;
@@ -121,10 +122,11 @@
             // 
             // clrBtn
             // 
-            this.clrBtn.Image = global::FashionStoreWF.Properties.Resources.loginBack;
+            this.clrBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.clrBtn.Image = global::FashionStoreWF.Properties.Resources.backgroundSingleColor;
             this.clrBtn.Location = new System.Drawing.Point(761, 453);
             this.clrBtn.Name = "clrBtn";
-            this.clrBtn.Size = new System.Drawing.Size(97, 37);
+            this.clrBtn.Size = new System.Drawing.Size(107, 46);
             this.clrBtn.TabIndex = 8;
             this.clrBtn.Text = "Clear";
             this.clrBtn.UseVisualStyleBackColor = true;

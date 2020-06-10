@@ -102,6 +102,8 @@
             // addBtn
             // 
             this.addBtn.BackgroundImage = global::FashionStoreWF.Properties.Resources.loginBack;
+            this.addBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.addBtn.Image = global::FashionStoreWF.Properties.Resources.backgroundSingleColor;
             this.addBtn.Location = new System.Drawing.Point(623, 456);
             this.addBtn.Name = "addBtn";
             this.addBtn.Size = new System.Drawing.Size(101, 36);
@@ -113,6 +115,8 @@
             // clrBtn
             // 
             this.clrBtn.BackgroundImage = global::FashionStoreWF.Properties.Resources.loginBack;
+            this.clrBtn.ForeColor = System.Drawing.Color.White;
+            this.clrBtn.Image = global::FashionStoreWF.Properties.Resources.backgroundSingleColor;
             this.clrBtn.Location = new System.Drawing.Point(443, 456);
             this.clrBtn.Name = "clrBtn";
             this.clrBtn.Size = new System.Drawing.Size(101, 36);
