@@ -84,10 +84,12 @@
             // imageSel
             // 
             this.imageSel.BackgroundImage = global::FashionStoreWF.Properties.Resources.loginBack;
+            this.imageSel.ForeColor = System.Drawing.SystemColors.Control;
+            this.imageSel.Image = global::FashionStoreWF.Properties.Resources.backgroundSingleColor;
             this.imageSel.Location = new System.Drawing.Point(676, 240);
             this.imageSel.Margin = new System.Windows.Forms.Padding(4);
             this.imageSel.Name = "imageSel";
-            this.imageSel.Size = new System.Drawing.Size(79, 28);
+            this.imageSel.Size = new System.Drawing.Size(89, 35);
             this.imageSel.TabIndex = 4;
             this.imageSel.Text = "Select";
             this.imageSel.UseVisualStyleBackColor = true;
@@ -96,10 +98,12 @@
             // ClearBtn
             // 
             this.ClearBtn.BackgroundImage = global::FashionStoreWF.Properties.Resources.loginBack;
+            this.ClearBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClearBtn.Image = global::FashionStoreWF.Properties.Resources.backgroundSingleColor;
             this.ClearBtn.Location = new System.Drawing.Point(516, 434);
             this.ClearBtn.Margin = new System.Windows.Forms.Padding(4);
             this.ClearBtn.Name = "ClearBtn";
-            this.ClearBtn.Size = new System.Drawing.Size(100, 28);
+            this.ClearBtn.Size = new System.Drawing.Size(100, 40);
             this.ClearBtn.TabIndex = 5;
             this.ClearBtn.Text = "Clear";
             this.ClearBtn.UseVisualStyleBackColor = true;
@@ -108,10 +112,12 @@
             // SubmitBtn
             // 
             this.SubmitBtn.BackgroundImage = global::FashionStoreWF.Properties.Resources.loginBack;
+            this.SubmitBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.SubmitBtn.Image = global::FashionStoreWF.Properties.Resources.backgroundSingleColor;
             this.SubmitBtn.Location = new System.Drawing.Point(655, 434);
             this.SubmitBtn.Margin = new System.Windows.Forms.Padding(4);
             this.SubmitBtn.Name = "SubmitBtn";
-            this.SubmitBtn.Size = new System.Drawing.Size(100, 28);
+            this.SubmitBtn.Size = new System.Drawing.Size(98, 40);
             this.SubmitBtn.TabIndex = 6;
             this.SubmitBtn.Text = "Submit";
             this.SubmitBtn.UseVisualStyleBackColor = true;

@@ -90,10 +90,12 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Gainsboro;
             this.button1.BackgroundImage = global::FashionStoreWF.Properties.Resources.loginBack;
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Image = global::FashionStoreWF.Properties.Resources.backgroundSingleColor;
             this.button1.Location = new System.Drawing.Point(825, 366);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 28);
+            this.button1.Size = new System.Drawing.Size(85, 36);
             this.button1.TabIndex = 4;
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = false;
@@ -103,10 +105,12 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Gainsboro;
             this.button2.BackgroundImage = global::FashionStoreWF.Properties.Resources.loginBack;
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Image = global::FashionStoreWF.Properties.Resources.backgroundSingleColor;
             this.button2.Location = new System.Drawing.Point(708, 366);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(85, 28);
+            this.button2.Size = new System.Drawing.Size(85, 36);
             this.button2.TabIndex = 5;
             this.button2.Text = "Register";
             this.button2.UseVisualStyleBackColor = false;
