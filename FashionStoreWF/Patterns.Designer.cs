@@ -40,7 +40,8 @@
             // 
             // ptnBtn
             // 
-            this.ptnBtn.Image = global::FashionStoreWF.Properties.Resources.loginBack;
+            this.ptnBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ptnBtn.Image = global::FashionStoreWF.Properties.Resources.backgroundSingleColor;
             this.ptnBtn.Location = new System.Drawing.Point(640, 12);
             this.ptnBtn.Name = "ptnBtn";
             this.ptnBtn.Size = new System.Drawing.Size(117, 37);
@@ -51,7 +52,8 @@
             // 
             // button2
             // 
-            this.button2.Image = global::FashionStoreWF.Properties.Resources.loginBack;
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Image = global::FashionStoreWF.Properties.Resources.backgroundSingleColor;
             this.button2.Location = new System.Drawing.Point(790, 12);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(140, 37);
