@@ -159,12 +159,12 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Image = global::FashionStoreWF.Properties.Resources.loginBack;
-            this.label4.Location = new System.Drawing.Point(405, 36);
+            this.label4.Location = new System.Drawing.Point(401, 34);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(249, 29);
+            this.label4.Size = new System.Drawing.Size(290, 32);
             this.label4.TabIndex = 10;
             this.label4.Text = "Add New Finish Good";
             // 
