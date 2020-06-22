@@ -143,9 +143,9 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::FashionStoreWF.Properties.Resources.output_onlinepngtools;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(84, 77);
+            this.pictureBox2.Location = new System.Drawing.Point(104, 114);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(503, 402);
+            this.pictureBox2.Size = new System.Drawing.Size(406, 288);
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
             // 
